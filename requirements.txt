@@ -1,0 +1,21 @@
+langchain 
+langchain-community 
+langchain_groq 
+groq 
+# faiss-gpu 
+openai 
+langchain_openai
+pandas
+# json
+openpyxl
+streamlit
+dash
+plotly
+streamlit-aggrid
+matplotlib
+numpy
+streamlit-extras
+validators
+transformers
+datasets
+sentence-transformers
