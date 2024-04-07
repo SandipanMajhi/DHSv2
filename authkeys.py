@@ -1,0 +1,2 @@
+hugging_token = "Bearer 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"
+groq_token = "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"

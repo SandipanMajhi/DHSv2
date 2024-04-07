@@ -1,4 +1,6 @@
-groq_api_key = ""
+from authkeys import *
+
+groq_api_key = groq_token
 
 open_source_models = ["llama2-70b-4096", "gemma-7b-it", "mixtral-8x7b-32768"]
 
@@ -25,7 +27,7 @@ trailing_answer = "\nConcise answer within 50 words:"
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/nli-roberta-base-v2"
-headers = {"Authorization": ""}
+headers = {"Authorization": hugging_token}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)

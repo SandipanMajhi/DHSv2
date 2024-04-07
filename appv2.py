@@ -46,6 +46,9 @@ def load_data():
 
     df1 = df1.merge(df2, on = ["Use Case ID", "Use Case Name"])
 
+    for i in range(len(risk_classes)):
+        df1[f"{risk_classes[i]}_score"] = df1[f"{risk_classes[i]}_score"].rank(ascending=False).astype('Int64')
+
 
     #### Cosine Sim Based Ranks #####
 
@@ -61,6 +64,8 @@ def load_data():
 
     df_cosine1 = df_cosine1.merge(df_cosine2, on = ["Use Case ID", "Use Case Name"])
     
+    for i in range(len(risk_classes)):
+        df_cosine1[f"cosine_{risk_classes[i]}_score"] = df_cosine1[f"cosine_{risk_classes[i]}_score"].rank(ascending=False).astype('Int64')
 
     return df, df1, df_cosine1
 
