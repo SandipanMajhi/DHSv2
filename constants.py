@@ -25,7 +25,7 @@ trailing_answer = "\nConcise answer within 50 words:"
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/nli-roberta-base-v2"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": ""}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
