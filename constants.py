@@ -1,4 +1,4 @@
-groq_api_key = "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"
+groq_api_key = ""
 
 open_source_models = ["llama2-70b-4096", "gemma-7b-it", "mixtral-8x7b-32768"]
 
